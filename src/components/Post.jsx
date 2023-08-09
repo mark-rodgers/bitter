@@ -17,7 +17,7 @@ const Post = (props) => {
   return (
     <div
       className={
-        "transition-colors duration-300 hover:bg-gray-50 border-gray-200" +
+        "cursor-pointer transition-colors duration-300 hover:bg-gray-50 border-gray-200" +
         (props.i == 9 ? "" : " border-b")
       }
     >
@@ -36,7 +36,7 @@ const Post = (props) => {
         <div className="flex-1">
           <div className="flex items-center justify-end">
             <div>
-              <span className="font-bold">{`${props.post.firstName} ${props.post.lastName}`}</span>{" "}
+              <span className="font-bold hover:underline">{`${props.post.firstName} ${props.post.lastName}`}</span>{" "}
               <span className="text-base-content/50">{`@${props.post.handle} · 14h`}</span>
             </div>
             <div className="flex-1">
